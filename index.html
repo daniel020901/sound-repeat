@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidup Jokowi-Click</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/ezgif.com-optimize.gif" type="image/x-icon">
+</head>
+
+<body>
+    <div id="_next">
+        <div>
+            <div class="home_cover">
+                <div class="home-cover-menu">
+                    <div>
+                        <img src="images/ezgif.com-optimize.gif" class="home_hidup" width="200" height="200">
+                    </div>
+                    <div class="home_content" id="soundButton">
+                        <button class="home_trigger">Click Me!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Tambahkan elemen audio di akhir body -->
+    <audio id="clickSound" src="images/hidup_jokowi.mp3"></audio>
+
+    <!-- Script untuk handle klik -->
+    <script>
+        const button = document.getElementById('soundButton');
+        const sound = document.getElementById('clickSound');
+
+        button.addEventListener('click', () => {
+            sound.currentTime = 0; // Reset suara ke awal
+            sound.play();          // Putar suara
+        });
+    </script>
+</body>
+
+</html>

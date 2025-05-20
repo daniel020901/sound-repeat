@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Comic Neue', cursive, sans-serif;
+}
+
+.home_cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;  /* viewport width */
+    height: 100vh; /* viewport height */
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+.home-cover-menu{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    background: hsla(0, 0%, 100%, .7);
+    border-radius: 15px;
+    padding-top: 20px;
+    z-index: 20; 
+    
+}
+
+.home_hidup {
+    margin: 20px auto 40px; /* bawahnya kasih margin lebih besar */
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.img{
+    overflow: clip;
+    overflow-clip-margin: content-box;
+}
+.home_content{
+    text-align: center;
+}
+
+.home_trigger {
+    margin: 10px;
+    padding: 1em 2em;
+    background-color: #ec2d96;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 80%;
+    min-height: 60px;
+    font-weight: 700;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.home_trigger:hover {
+    background-color: #d0267f;
+}
+
+button{
+    padding: initial;
+    margin: initial;
+}
+
+@media (max-width: 480px) {
+    .home_hidup {
+        width: 100px;
+        height: 100px;
+    }
+
+    .home-cover-menu {
+        width: 95%;
+        padding: 15px 10px 30px;
+    }
+
+    .home_trigger {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 0.7em 1em;
+    }
+}
